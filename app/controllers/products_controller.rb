@@ -4,6 +4,10 @@ class ProductsController < ApplicationController
   end
 
   def add
-
+    product = params[:product]
+    if product
+      cart << product
+      redirect_to products_path
+    end
   end
 end
