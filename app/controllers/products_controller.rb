@@ -8,6 +8,8 @@ class ProductsController < ApplicationController
     if product
       cart << product
       redirect_to products_path
+    else
+      redirect_to products_path, alert: "No product entered."
     end
   end
 end
