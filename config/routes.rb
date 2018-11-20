@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :products, only: [:index, :new]
+  resources :products, only: [:index, :add]
 
   root 'products#index'
   # The priority is based upon order of creation: first created -> highest priority.
